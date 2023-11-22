@@ -5,14 +5,27 @@
     margin-bottom: auto;
     display: flex;
     align-items: center;
-    background-color: aquamarine;
+    background-color: #3498db;
+    color: #fff;
+    padding: 20px;
+    
+    
+}
+
+.header h2{
+    text-decoration: none;
+    font-size: 18px;
+    margin-right: 5rem;
+    color: #fff; 
 }
 
 h1{
-        font-family: Jomhuria;
-        font-size: 2.4rem;
-        color: rgb(146, 23, 40);
-        margin: 0 auto 0 1rem;
- }
+    font-size: 2em;
+    margin: 0 auto 0 1rem;
+}
 
+ .header-text:hover {
+    text-decoration: underline; 
+    cursor: pointer;
+}
 
