@@ -1,0 +1,51 @@
+/* Darker Theme */
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: 'Verdana', sans-serif;
+}
+
+.main-section {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-profile {
+    min-width: 40rem;
+    height: 20%;
+    background-color: #222; /* Darker background color */
+    margin-bottom: 4rem; /* Reduced margin for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted box-shadow color */
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+}
+
+.main-profile h2 {
+    color: #fff; /* White text color */
+}
+
+.main-profile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.main-profile li {
+    border-bottom: 1px solid #444; /* Darker border color */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-profile span:first-child {
+    font-weight: bold;
+}
+
+.main {
+    font-family: 'Courier New', monospace; /* Changed font */
+    background-color: #1a1a1a; /* Darker background color */
+}
