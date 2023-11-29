@@ -5,28 +5,61 @@ body {
     font-family: 'Verdana', sans-serif;
 }
 
+.main {
+    font-family: 'Courier New', monospace; 
+    background-color: #1a1a1a; 
+}
+
+.button-bar {
+    display: flex;
+    background-color: #1a1a1a; 
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .button-bar button {
+    background-color: #555; 
+    color: #fff; 
+    border: none;
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 15em;
+    border-radius: 5px;
+    font-size: 1em;
+    font-weight: bold;
+  }
+  
+  .button-bar button:hover {
+    background-color: #777; /* Darker background color on hover */
+  }
+
 .main-section {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .main-profile {
     min-width: 40rem;
     height: 20%;
-    background-color: #222; /* Darker background color */
-    margin-bottom: 4rem; /* Reduced margin for better spacing */
+    background-color: #222; 
+    margin-bottom: 4rem; 
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Adjusted box-shadow color */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
     padding: 20px;
     text-align: center;
     width: 300px;
 }
 
 .main-profile h2 {
-    color: #fff; /* White text color */
+    color: #fff; 
 }
 
 .main-profile ul {
@@ -45,7 +78,9 @@ body {
     font-weight: bold;
 }
 
-.main {
-    font-family: 'Courier New', monospace; /* Changed font */
-    background-color: #1a1a1a; /* Darker background color */
+.video-section{
+    background-color: aqua;
+    width: 30em;
+    height: 20em;
 }
+
