@@ -6,16 +6,23 @@ function Header() {
 return(
     <section 
         className='header'>
-            <h1>Esport-wiki</h1>
-            <Link to='/profile'>
-            <h2 className="header-text">Profile</h2>
+            <Link to='/' style={{ textDecoration: 'none'}}>
+                <h1>Esport-wiki</h1>
             </Link>
-            <h2 className="header-text">Contact us</h2>
-            <h2 className="header-text">About me</h2>
+            <div className='links'>
+                <Link to='/profile' style={{ textDecoration: 'none'}}>
+                <h2 className="header-text">Profile</h2>
+                </Link>
+                <Link to='/about' style={{ textDecoration: 'none'}}>
+                <h2 className="header-text">About me</h2>
+            </Link>
+            </div>
     </section>
 )
 
 }
 
 export default Header;
+
+
 

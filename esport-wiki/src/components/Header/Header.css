@@ -18,17 +18,26 @@
     margin-right: 5rem;
     color: #ecf0f1; 
     text-decoration: none;
+   
     
 }
 
 h1 {
     font-size: 2em;
     margin: 0 auto 0 1rem;
+    color: #ecf0f1;
+   
+   
 }
 
 .header-text:hover {
     text-decoration: underline;
     cursor: pointer;
+}
+
+.links{
+    margin-left: auto;
+    display: flex;
 }
 
 
