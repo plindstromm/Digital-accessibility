@@ -1,7 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React from 'react';
 import './Card.css';
-import Profile from '../../assets/dust.jpg';
+import Profile from '../../assets/heaton.jpg';
 
 function Card() {
     return (

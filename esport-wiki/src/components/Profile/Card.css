@@ -1,48 +1,77 @@
-.card{
-    background-color: #222; 
+.card {
+    background-color: #222;
     width: 35em;
     height: 20em;
     margin-bottom: 15em;
     display: flex;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
-    font-family: 'Courier New', monospace; 
-}
-
-.card-right{
- 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    font-family: 'Courier New', monospace;
+  }
+  
+  .card-right {
     height: 100%;
     width: 35%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    
-   
-}
-
-.profile-pic{
+  }
+  
+  .profile-pic {
     height: 5em;
     width: 5em;
-   background-color: aliceblue;
+    background-color: aliceblue;
     border-radius: 50%;
     margin-bottom: 2em;
-}
-
-.profile-image{
+  }
+  
+  .profile-image {
     width: 100%;
     height: 100%;
     border-radius: 50%;
-}
-
-.card-left{
-    background-color: #222; 
+  }
+  
+  .card-left {
+    background-color: #222;
     height: 100%;
     width: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-}
+  }
+  
+  /* Media Query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .card {
+      width: 90%;
+      margin-bottom: 8em;
+    }
+  
+    .card-right {
+      width: 100%;
+    }
+  
+    .profile-pic {
+      margin-bottom: 1em;
+    }
+  }
+  
+  /* Media Query for screens smaller than 480px */
+  @media (max-width: 480px) {
+    .card {
+      flex-direction: column;
+      padding: 2em;
+    }
+  
+    .card-right,
+    .card-left {
+      width: 100%;
+    }
+  
+    .profile-pic {
+      margin-bottom: 1em;
+    }
+  }
+  

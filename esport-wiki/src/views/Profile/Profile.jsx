@@ -2,9 +2,9 @@
 import React, { useState } from 'react';
 import './Profile.css';
 import Header from '../../components/Header/Header';
+import Highlights from '../../assets/Highlights.mp4';
 
 function Profile() {
-   
     const initialMapData = [
         { name: 'Dust2', winPercentage: 60 },
         { name: 'Mirage', winPercentage: 55 },
@@ -36,13 +36,12 @@ function Profile() {
     return (
         <main className='main'>
             <Header />
-                <div className='button-bar'>
-                    <button onClick={() => toggleProfile(1)}>Show win percentage</button>
-                    <button onClick={() => toggleProfile(2)}>Show world ranking</button>
-                    <button onClick={() => toggleProfile(3)}>Show HS percentage</button>
-                </div>
+            <div className='button-bar'>
+                <button onClick={() => toggleProfile(1)}>Show win percentage</button>
+                <button onClick={() => toggleProfile(2)}>Show world ranking</button>
+                <button onClick={() => toggleProfile(3)}>Show HS percentage</button>
+            </div>
             <section className='main-section'>
-                
                 {activeProfile === 1 && (
                     <aside className='main-profile'>
                         <h3>Maps and Win Percentage</h3>
@@ -84,16 +83,21 @@ function Profile() {
                         </ul>
                     </aside>
                 )}
+                <h3>Highlight of the day</h3>
                 <div className='video-section'>
-                    
+                    {/* Use the video element to display the imported video */}
+                    <video controls width="100%">
+                        <source src={Highlights} type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
                 </div>
             </section>
-            
         </main>
     );
 }
 
 export default Profile;
+
 
 
 

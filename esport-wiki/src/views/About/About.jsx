@@ -26,6 +26,18 @@ function About() {
             </p>
             <hr /> 
           </div>
+          <div className='about-lower'>
+            <div className='about-lower-left'>
+              <h4>E-Mail</h4> <p>pontus.lindstrom@coin360.com</p>
+              <h4>Follow me on Faceit: <a href="https://www.faceit.com/en" target="_blank" rel="noreferrer">Click here</a></h4>
+            </div>
+            <div className='about-lower-right'>
+              <h4>Phone number:</h4> <p>0735-298598</p>
+              <h4>Follow me on Twitter: <a href="https://twitter.com/Real_HeatoN" target="_blank" rel="noreferrer">Click here</a></h4>
+
+            </div>
+
+          </div>
         </div>
       </main>
     </div>

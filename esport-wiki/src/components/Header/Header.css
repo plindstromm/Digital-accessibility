@@ -1,44 +1,72 @@
-/* Header Styles */
+/* Default styles for header */
 .header {
     width: 100%;
     height: 5rem;
     margin-bottom: auto;
     display: flex;
     align-items: center;
-    background-color: #333333; /* Darker blue background color */
-    color: #eeeeee; /* Light text color */
+    background-color: #333333;
+    color: #eeeeee;
     padding: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
-    font-family: 'Courier New', monospace; 
-    
-}
-
-.header h2 {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: 'Courier New', monospace;
+  }
+  
+  .header h2 {
     font-size: 18px;
     margin-right: 5rem;
-    color: #ecf0f1; 
+    color: #ecf0f1;
     text-decoration: none;
-   
-    
-}
-
-h1 {
+  }
+  
+  h1 {
     font-size: 2em;
     margin: 0 auto 0 1rem;
     color: #ecf0f1;
-   
-   
-}
-
-.header-text:hover {
+  }
+  
+  .header-text:hover {
     text-decoration: underline;
     cursor: pointer;
-}
-
-.links{
+  }
+  
+  .links {
     margin-left: auto;
     display: flex;
-}
+  }
 
+  @media (max-width: 768px) {
+    .header {
+      height: auto;
+        display: flex;
+      
+        
+      padding: 20px;
+    }
+  
+    .header h2 {
+      margin: 0 0 -10px 0;
+      margin-left: 3em;
+      font-size: 17px;
+      
+    }
+  
+    h1 {
+      margin: 10px 0 0 20px;
+      font-size: 25px;
+    }
+  
+    .links {
+      margin-left: 0;
+    }
+  }
+  
+
+  @media (max-width: 480px) {
+    .header h2 {
+      margin-right: 0;
+    }
+  }
+  
 
 

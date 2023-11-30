@@ -3,16 +3,16 @@ body {
     background-color: #333;
     color: #fff;
     font-family: 'Verdana', sans-serif;
-}
-
-.main {
-    font-family: 'Courier New', monospace; 
-    background-color: #1a1a1a; 
-}
-
-.button-bar {
+  }
+  
+  .main {
+    font-family: 'Courier New', monospace;
+    background-color: #1a1a1a;
+  }
+  
+  .button-bar {
     display: flex;
-    background-color: #1a1a1a; 
+    background-color: #1a1a1a;
     padding: 10px;
     display: flex;
     justify-content: space-around;
@@ -20,8 +20,8 @@ body {
   }
   
   .button-bar button {
-    background-color: #555; 
-    color: #fff; 
+    background-color: #555;
+    color: #fff;
     border: none;
     padding: 10px 15px;
     margin-right: 10px;
@@ -36,51 +36,80 @@ body {
   .button-bar button:hover {
     background-color: #777; /* Darker background color on hover */
   }
-
-.main-section {
+  
+  .main-section {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-}
-
-.main-profile {
+  }
+  
+  .main-profile {
     min-width: 40rem;
     height: 20%;
-    background-color: #222; 
-    margin-bottom: 4rem; 
+    background-color: #222;
+    margin-bottom: 4rem;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); 
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
     padding: 20px;
     text-align: center;
     width: 300px;
-}
-
-.main-profile h2 {
-    color: #fff; 
-}
-
-.main-profile ul {
+  }
+  
+  .main-profile h2 {
+    color: #fff;
+  }
+  
+  .main-profile ul {
     list-style: none;
     padding: 0;
-}
-
-.main-profile li {
+  }
+  
+  .main-profile li {
     border-bottom: 1px solid #444; /* Darker border color */
     padding: 10px 0;
     display: flex;
     justify-content: space-between;
-}
-
-.main-profile span:first-child {
+  }
+  
+  .main-profile span:first-child {
     font-weight: bold;
-}
-
-.video-section{
-    background-color: aqua;
+  }
+  
+  .video-section {
+ 
     width: 30em;
-    height: 20em;
-}
-
+  
+  }
+  
+  /* Media Query for screens smaller than 768px */
+  @media (max-width: 768px) {
+    .button-bar button {
+      width: 10em;
+      font-size: 0.8em;
+    }
+  
+    .main-profile {
+      width: 200px;
+    }
+  }
+  
+  /* Media Query for screens smaller than 480px */
+  @media (max-width: 480px) {
+    .button-bar {
+      flex-direction: column;
+    }
+  
+    .button-bar button {
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 5px;
+    }
+  
+    .main-profile {
+      width: 100%;
+    }
+  }
+  
